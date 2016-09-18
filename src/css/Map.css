@@ -1,0 +1,53 @@
+.leaflet-container {
+  height: 93.5vh;
+}
+
+.marker-image {
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  min-height: 100px;
+}
+
+ul {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+.modal-correct,
+.modal-incorrect {
+  text-align: center;
+  height: 40vh;
+}
+
+.modal-correct img,
+.modal-incorrect img {
+  max-width: 370px;
+  margin: 0 auto;
+  display: block;
+  max-height: 200px;
+}
+
+.answers {
+  min-height: 20vh;
+}
+
+.close-modal {
+  text-align: center;
+}
+
+.register-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.register-form h1 {
+  text-align: center;
+}

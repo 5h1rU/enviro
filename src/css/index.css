@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.form-register {
+  width: 50%;
+  margin: 0 auto;
+}
