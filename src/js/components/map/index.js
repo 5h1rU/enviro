@@ -9,8 +9,10 @@ import * as styles from '../../../css/Map.css';
 const position = [51.975707, 7.4144906];
 
 const MapContainer = (props) => {
-  // [props.location.lat, props.location.lgn]
-  const pos = props.location ? position : [51.975707, 7.4144906];
+  if(!props.positions) {
+    return null;
+  }
+  const pos = props.location ? [props.location.lat, props.location.lgn] : [51.975707, 7.4144906];
   const userLocation = props.showHints ? <Marker position={pos} key={position.lat} /> : null;
   const markerToShow = props.hasPopUp ? <Pins positions={props.positions} /> : <Hints positions={props.positions} />;
   return (

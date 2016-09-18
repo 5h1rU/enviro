@@ -2,7 +2,9 @@ import {
   ADD_QUESTIONS_ATTEMPT,
   ADD_QUESTIONS_SUCCESS,
   ADD_QUESTIONS_ERROR,
-  RESQUEST_POINTS_POSITION_SCREEN_A,
+  RESQUEST_POINTS_POSITION_SCREEN_A_ATTEMPT,
+  RESQUEST_POINTS_POSITION_SCREEN_A_SUCCESS,
+  RESQUEST_POINTS_POSITION_SCREEN_A_ERROR,
   SCREEN_A_COMPLETED,
   SCREEN_A_NEXT_QUESTION
 } from '../constants/screenA';
@@ -27,10 +29,23 @@ export function addQuestionsError(error) {
   }
 }
 
-export function addPositionPointsScreenA(positions) {
+export function addPositionPointsScreenAsuccess(positions) {
   return {
-    type: RESQUEST_POINTS_POSITION_SCREEN_A,
+    type: RESQUEST_POINTS_POSITION_SCREEN_A_SUCCESS,
     positions
+  }
+}
+
+export function addPositionPointsScreenAerror(error) {
+  return {
+    type: RESQUEST_POINTS_POSITION_SCREEN_A_ERROR,
+    error
+  }
+}
+
+export function addPositionPointsScreenAattempt() {
+  return {
+    type: RESQUEST_POINTS_POSITION_SCREEN_A_ATTEMPT,
   }
 }
 

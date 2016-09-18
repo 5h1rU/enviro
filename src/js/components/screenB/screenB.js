@@ -39,7 +39,6 @@ const ScreenB = (props) => {
     <div>
       <div className='pure-u-1-3'>
         <ul>
-          <li>{props.distance}</li>
           <li><h2>{quest.title}</h2></li>
           <li>
             <RaisedButton

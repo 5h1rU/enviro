@@ -2,7 +2,9 @@ import {
   ADD_QUESTIONS_ATTEMPT,
   ADD_QUESTIONS_SUCCESS,
   ADD_QUESTIONS_ERROR,
-  RESQUEST_POINTS_POSITION_SCREEN_A,
+  RESQUEST_POINTS_POSITION_SCREEN_A_ATTEMPT,
+  RESQUEST_POINTS_POSITION_SCREEN_A_SUCCESS,
+  RESQUEST_POINTS_POSITION_SCREEN_A_ERROR,
   SCREEN_A_COMPLETED,
   SCREEN_A_NEXT_QUESTION
 } from '../constants/screenA';
@@ -28,10 +30,19 @@ const screenA = (state = defaultState, action) => {
         ...state,
         error: action.error
       }
-    case RESQUEST_POINTS_POSITION_SCREEN_A:
+    case RESQUEST_POINTS_POSITION_SCREEN_A_ATTEMPT:
+      return {
+        ...state,
+      }
+    case RESQUEST_POINTS_POSITION_SCREEN_A_SUCCESS:
       return {
         ...state,
         positionsScreenA: action.positions
+      }
+    case RESQUEST_POINTS_POSITION_SCREEN_A_ERROR:
+      return {
+        ...state,
+        error: action.error
       }
     case SCREEN_A_COMPLETED:
       return {

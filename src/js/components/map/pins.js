@@ -5,7 +5,7 @@ import * as styles from '../../../css/Map.css';
 
 const Pins = ({positions}) => {
   const pins = positions.map(position => {
-    const coords = [position.lat, position.lgn];
+    const coords = [parseFloat(position.lat), parseFloat(position.lgn)];
     return (
       <Marker position={coords} key={position.lat}>
         <Popup>
